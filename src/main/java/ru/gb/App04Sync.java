@@ -4,11 +4,19 @@ package ru.gb;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 // Синхронайзеры
 public class App04Sync {
 
     public static void main(String[] args) {
+
+        // Интерфейс Lock из пакета java.util.concurrent – это продвинутый механизм синхронизации
+        // потоков. По гибкости он выигрывает в сравнении с блоками синхронизации. Для работы с этим
+        // интерфейсом необходимо создать объект одной из его реализаций
+        Lock lock = new ReentrantLock();
+
         // Семафор - используется для ограничения потоками доступа к ресурсам
         // Semaphore ограничивает количество потоков при работе с ресурсами. Для этого служит
         // счетчик. Если его значение больше нуля, то потоку разрешается доступ, а значение

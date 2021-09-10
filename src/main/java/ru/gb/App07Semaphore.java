@@ -2,7 +2,7 @@ package ru.gb;
 
 import java.util.concurrent.Semaphore;
 
-public class App05Semaphore {
+public class App07Semaphore {
     public static void main(String[] args) {
         final Semaphore smp = new Semaphore(4);
         Runnable limitedCall = new Runnable() {

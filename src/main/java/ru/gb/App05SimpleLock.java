@@ -3,7 +3,7 @@ package ru.gb;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class App06SimpleLock {
+public class App05SimpleLock {
     // Интерфейс Lock из пакета java.util.concurrent – это продвинутый механизм синхронизации
     // потоков. По гибкости он выигрывает в сравнении с блоками синхронизации. Для работы с этим
     // интерфейсом необходимо создать объект одной из его реализаций
