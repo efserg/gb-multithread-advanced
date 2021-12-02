@@ -1,4 +1,4 @@
-package ru.gb;
+package ru.gb.lesson5;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -93,7 +93,7 @@ class ArraySummator implements Callable<Long> {
 
 class CallableThread implements Callable<Integer> {
 
-    private int[] a;
+    private final int[] a;
 
     public CallableThread(int[] a) {
         this.a = a;

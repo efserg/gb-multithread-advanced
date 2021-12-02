@@ -1,4 +1,4 @@
-package ru.gb;
+package ru.gb.lesson5;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
