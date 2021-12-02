@@ -8,9 +8,9 @@ public class App04 {
         User user3 = new User("#3");
 
         atm.info();
-        Thread t1 = new Thread((Runnable) () -> atm.getMoney(user1, 50));
-        Thread t2 = new Thread((Runnable) () -> atm.getMoney(user2, 50));
-        Thread t3 = new Thread((Runnable) () -> atm.getMoney(user3, 50));
+        Thread t1 = new Thread(() -> atm.getMoney(user1, 50));
+        Thread t2 = new Thread(() -> atm.getMoney(user2, 50));
+        Thread t3 = new Thread(() -> atm.getMoney(user3, 50));
 
         t1.start();
         t2.start();
