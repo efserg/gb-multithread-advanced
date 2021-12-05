@@ -30,7 +30,8 @@ public class App06RWLockSample2 {
             if (lock.isWriteLocked()) {
                 System.out.println("Write Lock Present.");
             }
-            // если есть лок на запись, то читающий поток будет остановлен до его снятия
+            // если есть лок на запись, то читающий поток будет остановлен
+            // до его снятия
             lock.readLock().lock();
 
             try {

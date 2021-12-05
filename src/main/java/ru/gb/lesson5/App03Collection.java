@@ -18,7 +18,7 @@ public class App03Collection {
         final Collection<Object> synchronizedCollection = Collections.synchronizedCollection(new ArrayList<>());
         // таких методов в Collections довольно много
 //        Collections.synch...
-        // не эфективны и не рекомендуются к использованию
+        // не эффективны и не рекомендуются к использованию
 
         final List<String> arrayList = new CopyOnWriteArrayList<>();
         final Set<String> set = new CopyOnWriteArraySet<>();
@@ -32,7 +32,7 @@ public class App03Collection {
 
 class ProducerConsumerSample {
     static class Producer {
-        private ArrayBlockingQueue<String> queue;
+        private final ArrayBlockingQueue<String> queue;
 
         public Producer(ArrayBlockingQueue<String> queue) {
             this.queue = queue;
