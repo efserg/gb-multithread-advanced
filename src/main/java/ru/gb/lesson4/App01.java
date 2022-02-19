@@ -7,7 +7,7 @@ public class App01 {
         ThreadExampleClass t1 = new ThreadExampleClass();
         Thread t2 = new Thread(new RunnableExample());
         System.out.println("Begin");
-        t1.start(); // распространенная ошибка - вызов метода run() вместо start(). В этом случае выполнение метода произойдет в том же потоке
+        t1.start(); // Распространенная ошибка - вызов метода run() вместо start(). В этом случае выполнение метода произойдет в том же потоке
         t2.start();
         try {
             t1.join();

@@ -1,6 +1,6 @@
 package ru.gb.lesson4;
 
-public class App05 {
+public class App05a {
     private static int number = 0;
     private static boolean ready = false;
 

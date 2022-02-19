@@ -5,7 +5,7 @@ public class App08b {
         final Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true && !Thread.currentThread().isInterrupted()) {
+                while (!Thread.currentThread().isInterrupted()) {
                     // полезная работа
                 }
                 System.out.println("Поток остановлен, закрываем ресурсы");
@@ -13,7 +13,7 @@ public class App08b {
         });
         thread.start();
 
-        thread.interrupt(); // сейчас это уже просто так не сработает. Нужна
+        thread.interrupt(); // Сейчас это уже просто так не сработает. Нужна
         // обработка флага isInterrupted
 
     }
