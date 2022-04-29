@@ -18,7 +18,4 @@ public class App05b {
         t1.start();
         t2.start();   }
 
-    public void test() {
-
-    }
 }
